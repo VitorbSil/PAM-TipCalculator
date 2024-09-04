@@ -2,144 +2,64 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TipCalculator.MainPage">
-
     <ScrollView>
         <VerticalStackLayout
-<<<<<<< HEAD
-            Padding="40,0"
-            Spacing="10">
-            <HorizontalStackLayout Spacing="25">
-                <Label
-                Text="Conta"
-                VerticalOptions="Center"/>
-
-                <Entry 
-=======
             Padding="30,0"
-            Spacing="15">
-
-            <Label
-                Text="Conta"/>
-              
-            <Entry 
->>>>>>> 581ccbbe6d6fca26fdb36978b3870788a02c86cd
-                x:Name="AmountEntry"
-                Keyboard="Numeric"
-                WidthRequest="170"
-                Placeholder ="Digite o valor da conta"
-<<<<<<< HEAD
-                TextChanged="AmountEntry_TextChanged"/>
-            </HorizontalStackLayout>
-
+            Spacing="25">
             <HorizontalStackLayout Spacing="25">
                 <Label
-                Text="Gorjeta:"/>
-                <Label
-                 Text="0.00"
-                 x:Name="TipLabel"/>
+                    Text="Conta"/>
+                <Entry
+                    x:Name="AmountEntry"
+                    Keyboard="Numeric"
+                    Placeholder="Digite aqui o valor da conta"
+                    TextChanged="AmountEntry_TextChanged"
+                    WidthRequest="250"/>
             </HorizontalStackLayout>
-
-            <HorizontalStackLayout Spacing="25">
-                <Label
-                 Text="Total:"/>
-                <Label
-                 Text="0.00"
-                 x:Name="TotalLabel"/>
-            </HorizontalStackLayout>
-
-            <HorizontalStackLayout Spacing="25">
-                <Label
-                 Text="Percentual de gorjeta:"/>
-                <Label
-                 Text="20%"
-                 x:Name="TipPercentLabel"/>
-            </HorizontalStackLayout>
-=======
-                TextChanged="AmountEntry_TextChanged"
-                />
-               
             <Label
                 Text="Gorjeta:"/>
-                
             <Label
-                 Text="0.00"
-                 x:Name="TipLabel"/>
-                
+                x:Name="TipLabel"
+                Text="0.00"/>
             <Label
                 Text="Total:"/>
-                
             <Label
-                 Text="0.00"
-                 x:Name="TotalLabel"/>
-
+                x:Name="TotalLabel"
+                Text="0.00"/>
             <Label
-                 Text="Percentual de gorjeta:"/>
-            
+                Text="Percentual da gorjeta:"/>
             <Label
-                 x:Name="TipPercentLabel"
-                 Text="10%"
-                />
->>>>>>> 581ccbbe6d6fca26fdb36978b3870788a02c86cd
-            
-            <Slider 
+                x:Name="TipPercentLabel"
+                Text="20%"/>
+            <Slider
                 x:Name="TipSlider"
                 Maximum="70"
                 Minimum="0"
-<<<<<<< HEAD
                 Value="20"
-                x:Name="TipSlider"
-                ValueChanged="TipSlider_ValueChanged"/>
-=======
-                Value="5"
                 ValueChanged="TipSlider_ValueChanged"
                 />
-
->>>>>>> 581ccbbe6d6fca26fdb36978b3870788a02c86cd
-
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-            <Button
-                x:Name="SetLowTip"
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+                <Button 
+                x:Name="SetLowTip" 
+                WidthRequest="250"
                 Text="15%" 
-                WidthRequest="200"
-                Clicked="SetLowTip_Clicked"
-                WidthRequest="200"
-                HorizontalOptions="Center"/>
-            <Button
-                x:Name="SetHighTip"
-                Text="20%"
-                WidthRequest="200"
-                Clicked="SetHighTip_Clicked"
-<<<<<<< HEAD
-                WidthRequest="200"
-                HorizontalOptions="Center"/>
+                Clicked="SetLowTip_Clicked"/>
+                <Button 
+                WidthRequest="250"
+                x:Name="SetHighTip" 
+                Text="20%" 
+                Clicked="SetHighTip_Clicked"/>
             </HorizontalStackLayout>
-            
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                <Button
-=======
-                />
-            <Button
-                x:Name="RoundUpButton"
+            <Button 
+                x:Name="RoundUpButton" 
                 Text="Arredondar para cima" 
-                WidthRequest="200"
-                Clicked="RoundUpButton_Clicked"
-                />
-            <Button
->>>>>>> 581ccbbe6d6fca26fdb36978b3870788a02c86cd
-                x:Name="RoundDownButton"
+                Clicked="RoundUpButton_Clicked"/>
+            <Button 
+                x:Name="RoundDownButton" 
                 Text="Arredondar para baixo" 
-                WidthRequest="200"
-                Clicked="RoundDownButton_Clicked"
-                WidthRequest="200"
-                HorizontalOptions="Center"/>
-                <Button
-                x:Name="RoundUpButton"
-                Text="Arredondar para cima" 
-                Clicked="RoundUpButton_Clicked"
-                WidthRequest="200"
-                HorizontalOptions="Center"/>
-            </HorizontalStackLayout>
+                Clicked="RoundDownButton_Clicked"/>
+
         </VerticalStackLayout>
     </ScrollView>
- 
+
 </ContentPage>

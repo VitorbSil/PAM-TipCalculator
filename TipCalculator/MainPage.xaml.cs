@@ -40,7 +40,6 @@ namespace TipCalculator
             TipLabel.Text = valorDaGorjeta.ToString("C");
             TotalLabel.Text = valorTotal.ToString("C");
         }
-<<<<<<< HEAD
         private void TipSlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             TipPercentLabel.Text = TipSlider.Value.ToString("#.##") + "%";
@@ -74,23 +73,6 @@ namespace TipCalculator
             { 
                 Debug.WriteLine(ex.ToString());
             }
-        }  
-=======
-
-        private void TipSlider_ValueChanged(System.Object sender, Microsoft.Maui.Controls.ValueChangedEventArgs e)
-        {
-            TipPercentLabel.Text = TipSlider.Value.ToString("#") + "%";
         }
-
-        private void AmountEntry_TextChanged(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
-        {
-            double Valor = Convert.ToDouble(AmountEntry.Text);
-            double ValorDaGorjeta = Valor * (TipSlider.Value / 100);
-            double ValorTotal = ValorDaGorjeta + Valor;
-
-            TotalLabel.Text = ValorTotal.ToString("C");
-            TipLabel.Text = ValorDaGorjeta.ToString("C");
-        }
->>>>>>> 581ccbbe6d6fca26fdb36978b3870788a02c86cd
     }
 }
