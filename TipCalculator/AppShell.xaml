@@ -9,12 +9,12 @@
 
 
     <TabBar>
-    <ShellContent
+        <ShellContent
         Title="TipCalculator"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
-    <ShellContent
+        <ShellContent
         Title="Sobre"
         ContentTemplate="{DataTemplate local:AboutPage}"
         Route="AboutPage" />

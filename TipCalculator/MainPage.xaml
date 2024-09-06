@@ -14,23 +14,29 @@
                     Keyboard="Numeric"
                     Placeholder="Digite aqui o valor da conta"
                     TextChanged="AmountEntry_TextChanged"
-                    WidthRequest="250"/>
+                    WidthRequest="200"/>
             </HorizontalStackLayout>
-            <Label
+            <HorizontalStackLayout Spacing="25">
+                <Label
                 Text="Gorjeta:"/>
-            <Label
+                <Label
                 x:Name="TipLabel"
                 Text="0.00"/>
-            <Label
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="25">
+                <Label
                 Text="Total:"/>
-            <Label
+                <Label
                 x:Name="TotalLabel"
                 Text="0.00"/>
-            <Label
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="25">
+                <Label
                 Text="Percentual da gorjeta:"/>
-            <Label
+                <Label
                 x:Name="TipPercentLabel"
                 Text="20%"/>
+            </HorizontalStackLayout>
             <Slider
                 x:Name="TipSlider"
                 Maximum="70"
@@ -38,26 +44,32 @@
                 Value="20"
                 ValueChanged="TipSlider_ValueChanged"
                 />
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+
+            <HorizontalStackLayout Spacing="25">
                 <Button 
                 x:Name="SetLowTip" 
-                WidthRequest="250"
+                WidthRequest="200"
                 Text="15%" 
                 Clicked="SetLowTip_Clicked"/>
                 <Button 
-                WidthRequest="250"
+                WidthRequest="200"
                 x:Name="SetHighTip" 
                 Text="20%" 
                 Clicked="SetHighTip_Clicked"/>
             </HorizontalStackLayout>
-            <Button 
+
+            <HorizontalStackLayout Spacing="25">
+                <Button
+                WidthRequest="200"
                 x:Name="RoundUpButton" 
                 Text="Arredondar para cima" 
                 Clicked="RoundUpButton_Clicked"/>
-            <Button 
+                <Button
+                WidthRequest="200"
                 x:Name="RoundDownButton" 
                 Text="Arredondar para baixo" 
                 Clicked="RoundDownButton_Clicked"/>
+            </HorizontalStackLayout>
 
         </VerticalStackLayout>
     </ScrollView>
